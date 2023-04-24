@@ -5,6 +5,7 @@ plugins {
 }
 
 apply from: rootProject.file('gradle/common-spock.gradle')
+apply from: rootProject.file('gradle/common-testcontainers-redis.gradle')
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
@@ -29,8 +30,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.testcontainers:junit-jupiter'
-    testImplementation 'org.testcontainers:redis:1.16.0'
+//    testImplementation 'org.testcontainers:redis:1.16.0'
 
 }
 

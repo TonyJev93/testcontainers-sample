@@ -1,0 +1,8 @@
+apply plugin: 'groovy'
+
+dependencies {
+    // testcontainers
+    testImplementation "org.testcontainers:testcontainers:1.18.0" // for. Testcontainers
+    testImplementation "org.testcontainers:junit-jupiter:1.18.0" // for. Jupiter
+    testImplementation "org.testcontainers:spock:1.18.0" // for. Spock
+}
