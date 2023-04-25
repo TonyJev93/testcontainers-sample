@@ -30,7 +30,7 @@
 
 ## Trouble Shooting
 
-###                      
+### Could not find a valid Docker environment. Please see logs and check configuration
 
 - 현상
     - @Testcontainers 테스트 실행 시 `Could not find a valid Docker environment. Please see logs and check configuration`
@@ -52,7 +52,7 @@
        -> 해결 안 됨(왜 안되는지 이유 모르겠음)
         - 터미널 내 `$ docker context ls` 명령어 통해 나온 DOCKER_ENDPOINT 입력
     3. Rancher Desktop 의 도커 소켓 파일을 심볼릭
-       걸기`([출처](https://stackoverflow.com/questions/74173489/docker-socket-is-not-found-while-using-intellij-idea-and-docker-desktop-on-macos))
+       걸기([출처](https://stackoverflow.com/questions/74173489/docker-socket-is-not-found-while-using-intellij-idea-and-docker-desktop-on-macos))
        -> **해결 됨**
-        - `sudo ln -svf /Users/nhn/.rd/docker.sock /var/run/docker.sock
+        - `sudo ln -svf /Users/nhn/.rd/docker.sock /var/run/docker.sock`
         - 터미널 내 `$ docker context ls` 명령어 통해 나온 DOCKER_ENDPOINT를 /var/run/docker.sock에 링크로 연결
